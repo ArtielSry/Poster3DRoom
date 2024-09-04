@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="ico.ico" />
+    <!-- meta tag for the SEO: description, author -->
+    <meta name="description" content="Soraya Artiel Portfolio" />
+    <meta name="author" content="Soraya Artiel" />
+    <!-- meta tag for the SEO: OPEN GRAPH PROTOCOL -->
+    <meta
+      property="og:title"
+      content="Soraya Artiel - Web Developer, SEO, Designer"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://artielsry.github.io/portfolio/" />
+    <meta
+      property="og:description"
+      content="Soraya Artiel, Web developer, Android developer, SEO, UX-UI designer"
+    />
+    <meta
+      property="og:image"
+      content="https://private-user-images.githubusercontent.com/113340763/309543941-0e96aa43-ba0e-424e-9f12-fefb6579fb6a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk0NjM2MzcsIm5iZiI6MTcwOTQ2MzMzNywicGF0aCI6Ii8xMTMzNDA3NjMvMzA5NTQzOTQxLTBlOTZhYTQzLWJhMGUtNDI0ZS05ZjEyLWZlZmI2NTc5ZmI2YS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzAzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMwM1QxMDU1MzdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xYzdjZjcyOWJmZGEwYjMyODA0ZjE0OWI1ZDMyM2QzZTYxODc1NWFjNGRjMGRmZDYzZmM3YjQ4YWE2ZjczZDY0JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.RdFMj-n6OAblq2e3LhcAf8dOjpnc2sAlzeyqEDpZRHo"
+    />
+
+    <!-- Links css, normalize, google font -->
+    <link rel="stylesheet" type="text/css" href="styles/index.css" />
+    <link rel="stylesheet" type="text/css" href="normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <title>RetroRockWall</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="room" id="draggable-room">
+        <img src="./assets/roombg-size.jpg" alt="Room Image" />
+        <div class="button-container" id="button-container-1">
+          <button
+            class="green-button btn1"
+            id="btn1"
+            data-model="static/poster/poster.gltf"
+            onclick="handleButtonClick()"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <rect width="24" height="24" fill=""></rect>
+                <path
+                  d="M12 6V18"
+                  stroke="white"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M6 12H18"
+                  stroke="white"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </g>
+            </svg>
+          </button>
+          <button
+            class="green-button btn2"
+            id="btn2"
+            data-model="static/poster3/poster3.gltf"
+            onclick="handleButtonClick()"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <rect width="24" height="24" fill=""></rect>
+                <path
+                  d="M12 6V18"
+                  stroke="white"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M6 12H18"
+                  stroke="white"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </g>
+            </svg>
+          </button>
+          <button class="green-button btn3" id="btn3">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <rect width="24" height="24" fill=""></rect>
+                <path
+                  d="M12 6V18"
+                  stroke="white"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M6 12H18"
+                  stroke="white"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </g>
+            </svg>
+          </button>
+          <button class="green-button btn4" id="btn4" onclick="openContinue()">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <rect width="24" height="24" fill=""></rect>
+                <path
+                  d="M12 6V18"
+                  stroke="white"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M6 12H18"
+                  stroke="white"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </g>
+            </svg>
+          </button>
+          <button
+            class="green-button btn5"
+            id="btn5"
+            data-model="static/poster5/poster5.gltf"
+            onclick="handleButtonClick()"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <rect width="24" height="24" fill=""></rect>
+                <path
+                  d="M12 6V18"
+                  stroke="white"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M6 12H18"
+                  stroke="white"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </g>
+            </svg>
+          </button>
+          <button
+            class="green-button btn6"
+            data-model="static/poster4/poster4.gltf"
+            id="btn6"
+            onclick="handleButtonClick()"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <rect width="24" height="24" fill=""></rect>
+                <path
+                  d="M12 6V18"
+                  stroke="white"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M6 12H18"
+                  stroke="white"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </g>
+            </svg>
+          </button>
+          <button
+            class="green-button btn7"
+            data-model="static/poster2/poster2.gltf"
+            id="btn7"
+            onclick="handleButtonClick()"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <rect width="24" height="24" fill=""></rect>
+                <path
+                  d="M12 6V18"
+                  stroke="white"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M6 12H18"
+                  stroke="white"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </g>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div id="introduce-container">
+        <div class="introduce-container-block">
+          <div class="introduce-container-text">
+            <h1>RetrokWall</h1>
+            <p>
+              "Retrok Posters" is the ultimate destination for classic rock
+              enthusiasts and vintage art lovers. Dive into a vibrant gallery of
+              iconic band posters from the golden age of rock. With just a
+              click, experience these legendary posters in stunning 3D, bringing
+              the spirit of rock 'n' roll to life. Whether you're a collector, a
+              rock fan, or simply love retro design, your are welcome!
+            </p>
+          </div>
+          <button onclick="continueBtn()">Continue</button>
+        </div>
+        
+      </div>
+    </div>
+
+    <div id="container3D">
+      <button id="close-btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="icon icon-tabler icons-tabler-outline icon-tabler-x"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M18 6l-12 12" />
+          <path d="M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.129.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.129.0/examples/js/loaders/GLTFLoader.js"></script>
+
+    <!--  three js  -->
+    <script src="./javascript/three.js"></script>
+    <!-- introduce -->
+    <script src="./javascript/introduce.js"></script>
+    <!--  -->
+    <script src="./javascript/room.js"></script>
+    <!-- Btns -->
+    <script src="./javascript/btns.js"></script>
+    <!-- Drag - scroll  -->
+    <script src="./javascript/scroll.js"></script>
+  </body>
+</html>
